@@ -1,8 +1,7 @@
 #include "main.h"
 #include <unistd.h>
   /**
-    * main - entry point
-    * print_alphabet - print all alphabet in lowercase
+    * print_alphabet - prints all the alphabet in lowercase.
     * Return: returns 0 to indicate a successful execution
   */
 void print_alphabet(void)
