@@ -12,7 +12,10 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
-		printf("%c", str[i]);
+		if (str[i] != '\n' && isprint(str[i]))
+		{
+			printf("%c", str[i]);
+		}
 		i += 2;
 	}
 
