@@ -4,19 +4,14 @@
  * free_listint - frees a linked list
  * @head:the head of the listint_t list to be freed
  */
-void free_listint2(listint_t **head)
+void free_listint(listint_t *head)
 {
-	listint_t *temp;
+	listint_t *next;
 
-	if (head == NULL)
-		return;
-
-	while (*head)
+	while (head)
 	{
-		temp = (*head)->next;
-		free(*head);
-		*head = temp;
+		next = head->next;
+		free(head);
+		head = next;
 	}
-
-	*head = NULL;
 }
