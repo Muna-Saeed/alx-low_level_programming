@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - frees a listint_t linked list 
+ * free_listint_safe - frees a listint_t linked list
  * can free lists with a loop
  * @h: pointer to the first node in the linked list
  *
