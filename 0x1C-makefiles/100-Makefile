@@ -6,26 +6,15 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 .PHONY: all clean oclean fclean re
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
-
-$(OBJ): %.o: %.c | m.h
-	$(CC) $(CFLAGS) -c $< -o $@
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	-$(RM) $(NAME)
-	-find . -type f \( -name '*~' -o -name '#*#' \) -delete
+	$(RM) *~ $(NAME)
 
 oclean:
-	-$(RM) $(OBJ)
-	-find . -type f \( -name '*~' -o -name '#*#' \) -delete
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
 re: fclean all
-
-m.h:
-	@echo "Missing header file: m.h"
-	@false
