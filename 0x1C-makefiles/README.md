@@ -1,117 +1,69 @@
-I apologize for the misunderstanding. Here are the README.md templates for each task without the solutions:
+Apologies for the misunderstanding. Here's a template for a README.md file that you can use for your tasks:
 
-### Task 0: 0-Makefile
-
-**README.md:**
 ```markdown
-# Task 0: 0-Makefile
+# Project Title
 
-## Description
+Brief project description goes here.
 
+## Task 0: 0-Makefile
+
+### Description
 Create your first Makefile.
 
-### Requirements:
-
+### Requirements
 - Name of the executable: school
 - Rules: all
-- The all rule builds your executable
 - Variables: none
 
-### Example Usage:
-
+### Usage
 ```bash
 make -f 0-Makefile
 ./school
 ```
 
----
+## Task 1: 1-Makefile
 
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 0-Makefile
-```
+### Description
+Create a Makefile with specified rules and variables.
 
-### Task 1: 1-Makefile
-
-**README.md:**
-```markdown
-# Task 1: 1-Makefile
-
-## Description
-
-Create a Makefile with variables for compiler and source files.
-
-### Requirements:
-
+### Requirements
 - Name of the executable: school
 - Rules: all
-- The all rule builds your executable
 - Variables: CC, SRC
 
-### Example Usage:
-
+### Usage
 ```bash
 make -f 1-Makefile
 ./school
 ```
 
----
+## Task 2: 2-Makefile
 
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 1-Makefile
-```
+### Description
+Create a Makefile with additional variables and rules.
 
-### Task 2: 2-Makefile
-
-**README.md:**
-```markdown
-# Task 2: 2-Makefile
-
-## Description
-
-Create a Makefile with variables for compiler, source files, object files, and executable name.
-
-### Requirements:
-
+### Requirements
 - Name of the executable: school
 - Rules: all
-- The all rule builds your executable
 - Variables: CC, SRC, OBJ, NAME
 
-### Example Usage:
-
+### Usage
 ```bash
 make -f 2-Makefile
 make -f 2-Makefile  # To recompile only updated source files
 ```
 
----
+## Task 3: 3-Makefile
 
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 2-Makefile
-```
+### Description
+Enhance the Makefile with additional rules.
 
-### Task 3: 3-Makefile
-
-**README.md:**
-```markdown
-# Task 3: 3-Makefile
-
-## Description
-
-Create a Makefile with additional rules for cleaning.
-
-### Requirements:
-
+### Requirements
 - Name of the executable: school
 - Rules: all, clean, oclean, fclean, re
-- The all rule builds your executable
 - Variables: CC, SRC, OBJ, NAME, RM
 
-### Example Usage:
-
+### Usage
 ```bash
 make -f 3-Makefile
 make all -f 3-Makefile
@@ -121,109 +73,51 @@ make fclean -f 3-Makefile
 make re -f 3-Makefile
 ```
 
----
+## Task 4: 4-Makefile
 
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 3-Makefile
-```
+### Description
+Create a complete Makefile with additional compiler flags.
 
-### Task 4: 4-Makefile
-
-**README.md:**
-```markdown
-# Task 4: 4-Makefile
-
-## Description
-
-Create a Makefile with additional compiler flags.
-
-### Requirements:
-
+### Requirements
 - Name of the executable: school
-- Rules: all, clean, oclean, fclean, re
-- The all rule builds your executable
+- Rules: all, clean, fclean, oclean, re
 - Variables: CC, SRC, OBJ, NAME, RM, CFLAGS
 
-### Example Usage:
-
+### Usage
 ```bash
 make all -f 4-Makefile
 ```
 
----
+## Task 5: 5-island_perimeter.py
 
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 4-Makefile
-```
+### Description
+Implement a Python function for calculating the perimeter of an island.
 
-### Task 5: 5-island_perimeter.py
+### Requirements
+- First line contains `#!/usr/bin/python3`
+- Do not import any module
 
-**README.md:**
-```markdown
-# Task 5: 5-island_perimeter.py
-
-## Description
-
-Create a Python function to calculate the perimeter of an island.
-
-### Requirements:
-
-- First line contains #!/usr/bin/python3
-- You are not allowed to import any module
-- Module and function must be documented
-
-### Example Usage:
-
+### Usage
 ```bash
 ./5-main.py
 ```
 
----
+## Task 6: 100-Makefile
 
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 5-island_perimeter.py
-```
+### Description
+Create an advanced Makefile with additional constraints.
 
-### Task 6: 100-Makefile
-
-**README.md:**
-```markdown
-# Task 6: 100-Makefile
-
-## Description
-
-Create an advanced Makefile with additional requirements.
-
-### Requirements:
-
+### Requirements
 - Name of the executable: school
-- Rules: all, clean, oclean, fclean, re
-- The all rule builds your executable
+- Rules: all, clean, fclean, oclean, re
 - Variables: CC, SRC, OBJ, NAME, RM, CFLAGS
-- You have to use $(RM) for the cleaning up rules, but you are not allowed to set the RM variable
-- You are not allowed to use the string $(CC) more than once in your Makefile
-- You are only allowed to use the string $(RM) twice in your Makefile
-- You are not allowed to use the string $(CFLAGS)
-- You are not allowed to have an $(OBJ) rule
-- Your Makefile should work even if there is a file in the folder that has the same name as one of your rule
-- Your Makefile should not compile if the header file m.h is missing
+- Additional constraints listed in the task description
 
-### Example Usage:
-
+### Usage
 ```bash
 make all -f 100-Makefile
 make clean -f 100-Makefile
 make oclean -f 100-Makefile
 make fclean -f 100-Makefile
 make re -f 100-Makefile
-```
-
----
-
-GitHub repository: alx-low_level_programming
-Directory: 0x1C-makefiles
-File: 100-Makefile
 ```
