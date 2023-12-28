@@ -1,6 +1,6 @@
 # Project Title
 
-In the following tasks, we are going to use these files ‘https://github.com/alx-tools/0x1B.c.git‘. We want to compile these only.
+In the following tasks, we are going to use these files `https://github.com/alx-tools/0x1B.c.git`. We want to compile these only.
 
 ## Task 0: 0-Makefile
 
